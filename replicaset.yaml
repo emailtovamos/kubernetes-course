@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: game-replicaset
+spec:
+  selector:
+    matchLabels:
+      mylabelname: game
+  replicas: 1
+  template:
+    metadata:
+      labels: 
+        mylabelname: game
+    spec:
+      containers:
+      - name: game
+        image: emailtovamos/game-repo:latest

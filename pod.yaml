@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: game
+  labels: 
+    mylabelname: game
+spec:
+  containers:
+  - name: game
+    image: emailtovamos/game-repo:latest

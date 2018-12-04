@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: game
+spec:
+  minReadySeconds: 1
+  selector:
+    matchLabels:
+      mylabelname: game
+  replicas: 1
+  template: #template for pods
+    metadata:
+      labels: 
+        mylabelname: game
+    spec:
+      containers:
+      - name: game
+        image: emailtovamos/game-repo:latest
