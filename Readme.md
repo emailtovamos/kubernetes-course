@@ -23,11 +23,17 @@ Make sure the main file is named index.html
 **Steps:**
 
 Have the game in folder
+
 Create Dockerfile
+
 Create image
+
 Deploy the image in a pod
+
 Write Deployment yaml
+
 Deploy in gcloud
+
 
 Steps to create docker image and push it to registry: 
 
